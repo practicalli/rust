@@ -1,4 +1,4 @@
-# Practicalli Clojure
+# Practicalli Rust
 
 ```none
 ██████╗ ██████╗  █████╗  ██████╗████████╗██╗ ██████╗ █████╗ ██╗     ██╗     ██╗
@@ -7,37 +7,28 @@
 ██╔═══╝ ██╔══██╗██╔══██║██║        ██║   ██║██║     ██╔══██║██║     ██║     ██║
 ██║     ██║  ██║██║  ██║╚██████╗   ██║   ██║╚██████╗██║  ██║███████╗███████╗██║
 ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝
-
- ██████╗██╗      ██████╗      ██╗██╗   ██╗██████╗ ███████╗
-██╔════╝██║     ██╔═══██╗     ██║██║   ██║██╔══██╗██╔════╝
-██║     ██║     ██║   ██║     ██║██║   ██║██████╔╝█████╗
-██║     ██║     ██║   ██║██   ██║██║   ██║██╔══██╗██╔══╝
-╚██████╗███████╗╚██████╔╝╚█████╔╝╚██████╔╝██║  ██║███████╗
- ╚═════╝╚══════╝ ╚═════╝  ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
 ```
 
 > NOTE: Ascii Art Generator: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Astro%205
 
 ## Book Overview
 
-A guide to software development with the Clojure programming language, using Clojure CLI and a wide range of community tools for a REPL focused workflow.
+A guide to software development with the Rust programming language and community tools to support an effective workflow.
 
-The guide uses Practicalli Clojure CLI Config to provide aliases to run over 30 community tools that complement the workflow, including a REPL Reloaded workflow for a highly interactive and effective development experience.
-
-Learning Clojure syntax and how to think in a functional design is also covered with code examples and challenge that help embed these concepts.
+Learning Rust syntax and how to think in a functional design is also covered with code examples and challenge that help embed these concepts.
 
 
 ## Book status
 
-[![MegaLinter](https://github.com/practicalli/clojure/actions/workflows/megalinter.yaml/badge.svg)](https://github.com/practicalli/clojure/actions/workflows/megalinter.yaml)[![Publish Book](https://github.com/practicalli/clojure/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/clojure/actions/workflows/publish-book.yaml)
-[![Publish Book](https://github.com/practicalli/clojure/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/clojure/actions/workflows/publish-book.yaml)
-[![pages-build-deployment](https://github.com/practicalli/clojure/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/practicalli/clojure/actions/workflows/pages/pages-build-deployment)
+[![MegaLinter](https://github.com/practicalli/rust/actions/workflows/megalinter.yaml/badge.svg)](https://github.com/practicalli/rust/actions/workflows/megalinter.yaml)[![Publish Book](https://github.com/practicalli/rust/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/rust/actions/workflows/publish-book.yaml)
+[![Publish Book](https://github.com/practicalli/rust/actions/workflows/publish-book.yaml/badge.svg)](https://github.com/practicalli/rust/actions/workflows/publish-book.yaml)
+[![pages-build-deployment](https://github.com/practicalli/rust/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/practicalli/rust/actions/workflows/pages/pages-build-deployment)
 
-[![Ideas & Issues](https://img.shields.io/github/issues/practicalli/clojure?label=content%20ideas%20and%20issues&logoColor=green&style=for-the-badge)](https://github.com/practicalli/clojure/issues)
-[![Pull requests](https://img.shields.io/github/issues-pr/practicalli/clojure?style=for-the-badge)](https://github.com/practicalli/clojure/pulls)
+[![Ideas & Issues](https://img.shields.io/github/issues/practicalli/rust?label=content%20ideas%20and%20issues&logoColor=green&style=for-the-badge)](https://github.com/practicalli/rust/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/practicalli/rust?style=for-the-badge)](https://github.com/practicalli/rust/pulls)
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/practicalli/clojure?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/practicalli/clojure?style=for-the-badge&label=github%20contributors)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/practicalli/rust?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/practicalli/rust?style=for-the-badge&label=github%20contributors)
 
 ## Creative commons license
 
@@ -52,12 +43,12 @@ Issues and pull requests are most welcome although it is the maintainers discres
 
 Please read the [detailed Practicalli contributing page](https://practical.li/contributing/) before raising an issue or pull request to avoid disapointment.
 
-* [Current Issues](https://github.com/practicalli/clojure/issues)
-* [Current pull requests](https://github.com/practicalli/clojure/pulls)
+* [Current Issues](https://github.com/practicalli/rust/issues)
+* [Current pull requests](https://github.com/practicalli/rust/pulls)
 
 [Practicalli Clojure CLI Config](clojure/clojure-cli/practicalli-config.md) provides a user level configuration providing aliases for community tools used throughout this guide.  Issues and pull requests can also be made via its GitHub repository.
 
-By submitting content ideas and corrections you are agreeing they can be used in any work by Practicalli under the [Creative Commons Attribution ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).  Attribution will be detailed via [GitHub contributors](https://github.com/practicalli/clojure/graphs/contributors).
+By submitting content ideas and corrections you are agreeing they can be used in any work by Practicalli under the [Creative Commons Attribution ShareAlike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/).  Attribution will be detailed via [GitHub contributors](https://github.com/practicalli/rust/graphs/contributors).
 
 ## Sponsor Practicalli
 
@@ -70,7 +61,7 @@ Thanks to [Cognitect](https://www.cognitect.com/), [Nubank](https://nubank.com.b
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=practicalli/clojure&type=Date)](https://star-history.com/#practicalli/clojure&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=practicalli/rust&type=Date)](https://star-history.com/#practicalli/rust&Date)
 
 
 ## GitHub Actions
@@ -121,4 +112,3 @@ make docs-changed
 ```
 
 > NOTE: navigation changes may not be correctly reflected without reloading the page in the web browser or carrying out a full `make docs` build
-
