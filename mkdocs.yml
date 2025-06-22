@@ -140,6 +140,9 @@ nav:
       - Writing Tips: https://practical.li/writing-tips/
   - Install:
       - install/index.md
+  - Editors:
+      - editors/index.md
+      - editors/neovim.md
   - Rust Projects:
       - projects/index.md
   - Code Challenges:
