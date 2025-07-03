@@ -2,6 +2,7 @@
 
 Cargo package manager is use to create and work with Rust projects.
 
+Templates can be used to bootstrap new rust projects.
 
 
 ## Command reference
@@ -16,8 +17,9 @@ Cargo package manager is use to create and work with Rust projects.
 | `cargo publish` | Publish library to crates.io |
 
 
- ## Create a new rust project
+## Create a new rust project
 
+!!! NOTE ""
 ```shell
 cargo new project-name
 ```
@@ -49,7 +51,7 @@ Define a dependency with its name and version.
 
 ```rust
 [dependencies]
-ferris-says = "0.3.1"
+ferris-says = "0.3.2"
 ```
 
 `Cargo.lock` contains a log of the specific versions of dependencies for the project, created and updated by the `cargo build` command.
@@ -58,16 +60,15 @@ ferris-says = "0.3.1"
 Make the library available with the `use` directive
 
 ```rust
-use ferris_says::say; // from the previous step
+use ferris_says::say;
 use std::io::{stdout, BufWriter};
 
 fn main() {
-    let stdout = stdout();
-    let message = String::from("Hello fellow Rustaceans!");
-    let width = message.chars().count();
+    let out = "Hello fellow Rustaceans!";
+    let width = 24;
 
-    let mut writer = BufWriter::new(stdout.lock());
-    say(&message, width, &mut writer).unwrap();
+    let mut writer = BufWriter::new(stdout());
+    say(out, width, &mut writer).unwrap();
 }
 ```
 
