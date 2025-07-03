@@ -2,23 +2,29 @@
 
 Neovim provides excellent syntax support via the Treesiter parser for rust.
 
+[rust-analyzer](){target=_blank} provides an LSP server that returns diagnostics to the Neovim LSP Client and/or rustaceanvim
+
+[rustaceanvim](https://github.com/mrcjkb/rustaceanvim){target=_blank} provides [extensive features for rust development](https://github.com/mrcjkb/rustaceanvim?tab=readme-ov-file#books-usage--features) and integrates with LSP clients.
 
 
-=== Practicalli Astro
-
-    Provides Rust support via the [Astrocommunity Rust pack](https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/rust)
+=== "Practicalli Astro"
 
     !!! NOTE "Add Astrocommunity Rust Pack"
         ```lua
           { import = "astrocommunity.pack.rust" },
         ```
 
-    - rust Treesitter parser
-    - rustaceanvim for language specific tooling
-    - crates.nvim for crate management
-    - TOML language support
+    Rust support provided via the [Astrocommunity Rust pack](https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/rust)
 
-    `rust-analyzer` shold be added via rustup
+    - rust Treesitter parser
+    - LSP support via rust-analyzer & cargo clippy
+    - DAP (debug) via codelldb (mason installl)
+    - rustaceanvim for rust specific tooling via rust-analyzer
+    - crates.nvim for crate management and completion
+    - TOML language support
+    - [neotest](https://github.com/nvim-neotest/neotest) is a Neovim framework for test runners, i.e. rustaceanvim.neotest
+
+    `rust-analyzer` shold be added via the `rustup` tool
 
     !!! NOTE "Install rust-analyzer via rustup"
         ```shell
@@ -30,9 +36,3 @@ Neovim provides excellent syntax support via the Treesiter parser for rust.
         info: downloading component 'rust-analyzer'
         info: installing component 'rust-analyzer'
         ```
-
-
-
-
-!!! TIP "rustaceanvim"
-    Provides advanced set of tools over the standard Neovim LSP Client that are specific to rust-analyzer
