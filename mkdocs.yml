@@ -145,6 +145,9 @@ nav:
       - editors/neovim.md
   - Rust Projects:
       - projects/index.md
+      - Guides:
+          - projects/guides/index.md
+          - Rest API: projects/guides/rest-api.md
   - Code Challenges:
       - coding-challenges/index.md
       - Exercism:
