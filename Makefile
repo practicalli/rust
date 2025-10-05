@@ -47,6 +47,13 @@ megalinter-upgrade:  ## Upgrade MegaLinter config to latest version
 # --- Documentation Generation  ------ #
 python-venv:  ## Enable Python Virtual Environment for MkDocs
 	$(info --------- Mkdocs Local Server ---------)
+dependencies-outdated: ## Report new versions of library dependencies and GitHub action
+	$(info -- Search for outdated libraries ---------)
+	- clojure -T:search/outdated > $(OUTDATED_FILE)
+
+dependencies-update: ## Update all library dependencies and GitHub action
+	$(info -- Search for outdated libraries ---------)
+	- clojure -T:update/dependency-versions > $(OUTDATED_FILE)
 	source ~/.local/venv/bin/activate
 
 docs: ## Build and run mkdocs in local server (python venv)
