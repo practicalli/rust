@@ -54,11 +54,11 @@ dependencies-update: ## Update all library dependencies and GitHub action
 
 # --- Documentation Generation  -------- #
 python-venv:  ## Create Python Virtual Environment
-	$(info -- Create Python Virtual Environment --)
+	$(info -- Create Python Virtual Environment -----)
 	python3 -m venv ~/.local/venv
 
 python-activate:  ## Activate Python Virtual Environment for MkDocs
-	$(info -- Mkdocs Local Server ----------------)
+	$(info -- Mkdocs Local Server -------------------)
 	source ~/.local/venv/bin/activate
 
 mkdocs-install:
@@ -82,7 +82,7 @@ docs-debug:  ## Run mkdocs local server in debug mode (python venv)
 	. ~/.local/venv/bin/activate; $(MKDOCS_SERVER) -v
 
 docs-staging:  ## Deploy to staging repository
-	$(info -- Mkdocs Staging Deploy ---------------)
+	$(info -- Mkdocs Staging Deploy -----------------)
 	source ~/.local/venv/bin/activate && mkdocs gh-deploy --force --no-history --config-file mkdocs-staging.yml
 # -------------------------------------- #
 
